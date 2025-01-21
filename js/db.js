@@ -19,6 +19,6 @@ db.init = () => {
     });
 };
 
-db.addUsser = (user) => {
+db.addUser = (user) => {
     return db.instance.users.add(user);
 };
