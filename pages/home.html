@@ -1,18 +1,36 @@
 <h1>HOME</h1>
+
 <div class="row">
-  <div class="col-3">
-    <form id="form-user">
-      <div class="mb-3">
-        <label for="firstname" class="form-label">Firstname</label>
-        <input type="text" class="form-control" id="firstname" placeholder="firstname"/>
-      </div>
-      <div class="mb-3">
-        <label for="lastname" class="form-label">Lastname</label>
-        <input type="text" class="form-control"id="lastname" placeholder="lastname"/>
-      </div>
-      <div class="mb-3">
-        <button type="button"class="btn btn-primary" onclick="home.saveUser(event)">SAVE</button>
-      </div>
-    </form>
-  </div>
+    <div class="col-3">
+        <form id="form-user">
+            <div class="mb-3">
+                <label for="firstname" class="form-label">firstname</label>
+                <input type="text" class="form-control" id="firstname" placeholder="firstname">
+            </div>
+            <div class="mb-3">
+                <label for="lastname" class="form-label">lastname</label>
+                <input type="text" class="form-control" id="lastname" placeholder="lastname">
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary" onclick="home.saveUser(event)" >SAVE</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <table id="user-list" class="table table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">firstname</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+    </div>
 </div>
